@@ -52,11 +52,18 @@
                                 </li>
                             @endif
                         @else
-                       <li> <a  href="{{ url('/home2') }}" class="text-sm text-gray-700 underline"> User</a></li>
+                       <ul class="nav">
+                           <li class="nav-item">
+                               <a class="nav-link"href="{{ url('/home2') }}" >User</a>
 
-                        <li><a  href="{{ url('/home3') }}" class="text-sm text-gray-700 underline"> Customer</a></li>
-
-                       <li> <a  href="{{ url('/home1') }}" class="text-sm text-gray-700 underline"> Document</a></li>
+                               <ul class="nav">
+                                <li class="nav-item">
+                                    <a class="nav-link"href="{{ url('/home3') }}" >Customer</a>
+                                    <ul class="nav">
+                                        <li class="nav-item">
+                                            <a class="nav-link"href="{{ url('/home1') }}" >Document</a>
+             
+     
                             <li class="nav-item dropdown">
                                 <a id="navbarDropdown" class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>
                                     
